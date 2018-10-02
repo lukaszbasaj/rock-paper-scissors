@@ -58,9 +58,9 @@ function game(userChoice) {
         case "paperpaper":
         case "scissorsscissors":
             resultIsDraw(userChoice, computerChoice);
-            break
-    }
-}
+            break;
+    };
+};
 
 
 function main() {
