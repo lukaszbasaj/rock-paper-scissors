@@ -14,7 +14,7 @@ function userWin(userChoice, computerChoice) {
     userScoreSelected.innerHTML = userScore;
     computerScoreSelected.innerHTML = computerScore;
     result.innerHTML = `${userChoice} beats ${computerChoice}. You win`;
-    console.log(userScore, computerScore);
+    
 };
 
 function userLose(userChoice, computerChoice) {
@@ -22,7 +22,7 @@ function userLose(userChoice, computerChoice) {
     userScoreSelected.innerHTML = userScore;
     computerScoreSelected.innerHTML = computerScore;
     result.innerHTML = `${userChoice} cover ${computerChoice}. You lost`;
-    console.log(userScore, computerScore);
+    
 };
 
 function resultIsDraw(userChoice, computerChoice) {
@@ -31,7 +31,7 @@ function resultIsDraw(userChoice, computerChoice) {
     userScoreSelected.innerHTML = userScore;
     computerScoreSelected.innerHTML = computerScore;
     result.innerHTML = `${userChoice} equals ${computerChoice}. We have a draw`;
-    console.log(userScore, computerScore);
+    
 };
 
 
