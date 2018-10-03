@@ -81,16 +81,17 @@ function main() {
 main();
 
 function setReset() {
-    userScoreSelected.innerHTML = userScore;
-    computerScoreSelected.innerHTML = computerScore;
     userScore = 0;
     computerScore = 0;
-    return userScore, computerScore; 
+    userScoreSelected.innerHTML = userScore;
+    computerScoreSelected.innerHTML = computerScore;
+    result.innerHTML = `rock beats scissors. You rock! You're winner!`;
+
 };
 
 function resetResult() {
-    reset.addEventListener('click',function() {
-      setReset();   
+    reset.addEventListener('click',setReset);
+      ;   
     });
 };
 resetResult();
