@@ -90,8 +90,6 @@ function setReset() {
 };
 
 function resetResult() {
-    reset.addEventListener('click',setReset);
-      ;   
-    });
+    reset.addEventListener('click',setReset);  
 };
 resetResult();
