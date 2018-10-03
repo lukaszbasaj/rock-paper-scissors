@@ -1,25 +1,60 @@
+
+Otwarto wątek. 2 wiadomości. Wszystkie wiadomości przeczytane.
+
+Przejdź do treści
+Korzystanie z usługi Gmail z czytnikami ekranu
+Podczas sprawdzania poczty na koncie lukasz.basaj@tlen.pl wystąpił błąd.  
+Szczegóły
+  
+Zamknij
+1 z 33 283
+scissors-paper-rock
+Odebrane
+x
+
+Waldemar Fryc
+10:13 (4 godziny temu)
+HTML: <meta name="viewport" content="width=device-width, initial-scale=1.0"> CSS: #reset { display: inline-block; position: absolute; text-align: center; color:
+
+Waldemar Fryc <waldemar.fryc@gmail.com>
+12:57 (1 godzinę temu)
+do ja
+
+staralem sie jak najmniej zmieniac (tylko css), tak zeby to mialo sens nauki.
+musisz toche jeszcze doszlifowac style dla mobilek.
+
+Best regards,
+Waldemar
+
+Obszar załączników
+
+
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower:400,500');
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-html {
-    background-color: rgb(176, 201, 221);
+html, body {
+    background-color: #eee;
 }
 
-.container {
-    left: 30%;
-    width: 600px;
-    height: 600px;
+#container {
+    position: relative;
+    max-width: 767px;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: rgb(176, 201, 221);
+    border-radius: 8px;
 }
 
 header {
     background: white;
     padding: 20px;
+    border-radius: 8px 8px 0 0;
 }
 
 header>h1 {
@@ -40,7 +75,6 @@ header>h1 {
     color: white;
     font-size: 60px;
     font-family: Indie Flower, sans-serif;
-    left: -15px;
 }
 
 
@@ -50,7 +84,7 @@ header>h1 {
     text-align: center;
     color: coral;
     font-size: 3rem;
-    right: calc(50% - 350px);
+    right: 0;
     top: 100px;
 }
 
@@ -87,6 +121,7 @@ header>h1 {
 
 .result {
     margin-top: 50px;
+    padding: 0 10px;
     font-size: 40px;
     color: white;
 }
@@ -150,4 +185,36 @@ header>h1 {
     font-family: Indie Flower, sans-serif;
     font-weight: bold;
     font-size: 20px;
+    padding-bottom: 20px;
 }
+
+
+@media (max-width: 620px) {
+    #reset.choice {
+        font-size: 2rem;
+        position: static;
+        display: block;
+        margin: 10px auto;
+        border: 4px solid white;
+        border-radius: 50%;
+        width:50px;
+        height:50px;
+        padding: 4px;
+    } 
+}
+
+@media (max-width: 480px) {
+    .result {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .choices {
+        margin: 30px 0;
+    }
+    header {
+        padding: 5px 20px;
+    }
+}
+styles1.css
+Wyświetlanie styles1.css.
+globeShow in RadaExpandCopy members
