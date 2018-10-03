@@ -85,7 +85,7 @@ function setReset() {
     computerScore = 0;
     userScoreSelected.innerHTML = userScore;
     computerScoreSelected.innerHTML = computerScore;
-    result.innerHTML = `rock beats scissors. You rock! You're winner!`;
+    result.innerHTML = `rock beats scissors. You rock! You're a winner!`;
 
 };
 
