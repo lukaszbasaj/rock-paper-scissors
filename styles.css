@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower:400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    background-color: #eee;
+}
+
+#container {
+    position: relative;
+    max-width: 767px;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: rgb(176, 201, 221);
+    border-radius: 8px;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+header>h1 {
+    color: rgb(34, 36, 46);
+    text-align: center;
+    font-family: Indie Flower, sans-serif;
+}
+
+
+.score-board {
+    position: relative;
+    margin: 5px auto;
+    text-align: center;
+    width: 150px;
+    padding: 10px 10px;
+    border: 3px solid white;
+    border-radius: 8px;
+    color: white;
+    font-size: 60px;
+    font-family: Indie Flower, sans-serif;
+}
+
+
+#reset {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    color: coral;
+    font-size: 3rem;
+    right: 0;
+    top: 100px;
+}
+
+.identity {
+    position: absolute;
+    background: rgb(209, 69, 59);
+    color: white;
+    font-size: 25px;
+    padding: 2px 10px;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-family: Indie Flower, sans-serif;
+    border-radius: 20px;
+
+
+}
+
+#user-label {
+    text-align: center;
+    top: 35px;
+    left: -74px;
+
+
+
+}
+
+#computer-label {
+    text-align: center;
+    top: 35px;
+    right: -123px;
+
+}
+
+
+.result {
+    margin-top: 50px;
+    padding: 0 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.result>p {
+    text-align: center;
+    font-weight: bold;
+    font-family: Indie Flower, sans-serif;
+}
+
+.result>p::first-letter {
+    text-transform: capitalize;
+}
+
+
+.choices {
+    position: relative;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 3rem;
+    color: coral;
+}
+
+
+.choice {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    padding: 20px;
+    display: inline-block;
+    transition: all 3000ms easy;
+
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: rgb(40, 45, 58);
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#cto-message {
+    text-align: center;
+    color: white;
+    font-family: Indie Flower, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 620px) {
+    #reset.choice {
+        font-size: 2rem;
+        position: static;
+        display: block;
+        margin: 10px auto;
+        border: 4px solid white;
+        border-radius: 50%;
+        width:50px;
+        height:50px;
+        padding: 4px;
+    } 
+}
+
+@media (max-width: 480px) {
+    .result {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .choices {
+        margin: 30px 0;
+    }
+    header {
+        padding: 5px 20px;
+    }
+}
